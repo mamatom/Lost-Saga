@@ -12,7 +12,7 @@ $.getJSON("./json/heroes.json", function(json) {
 
 function populateHeroes(name,isenter = false) {
     var inputs
-    console.log(name);
+    console.log(name.vaule);
     if(isenter)
         inputs = name
     else
