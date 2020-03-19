@@ -1,8 +1,8 @@
-
-var heroes;
-$.getJSON("./json/heroes.json", function(json) {
+$.holdReady(true);
+var heroes = $.getJSON("./json/heroes.json", function(json) {
     console.log(json);
     heroes = json;
+    $.holdReady(false);
     
     
 });
@@ -12,7 +12,8 @@ $.getJSON("./json/heroes.json", function(json) {
 
 function populateHeroes(name,isenter = false) {
     var inputs
-    console.log(name.vaule);
+    
+   // console.log(name.value);
     if(isenter)
         inputs = name
     else
@@ -21,9 +22,29 @@ function populateHeroes(name,isenter = false) {
     $("#resultsContainer").show();
     if( name != ""){
         var results = [];
-        $.each(heroes,function(hero){
+        var found;
+        var reg = '/' + inputs + '/i'
+        $.each(heroes,function(_,hero){
+            
+            var char = hero.name;
+            var reg = RegExp(inputs,'i');
 
+            search = char.search(reg);
+            if(search!=-1){
+                var heroName = hero.name,
+                    id = hero.id;
+
+                results.push({'name':heroName,'id':id});
+               
+            }
         })
+        console.log(results);
+        var pos = 0,
+            image = '<a class="resultsImg" style="background: url(https://sites.google.com/site/llsthum/img.jpg)'+pos+'px 0px;"></a>'
+        for(i=0;i<results.length;i++){
+            
+            
+        }
 
 
     }
