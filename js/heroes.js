@@ -1,7 +1,10 @@
+
 var heroes;
 $.getJSON("./json/heroes.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
+    console.log(json);
     heroes = json;
+    
+    
 });
 
 
@@ -37,16 +40,3 @@ $(document).mouseup(function(e){
 });
 
 
-function LoadAllJsonObjects(obj) {
-    var result = {}
-    
-    var promises = Object.entries(obj).map(function(url){
-        return $.getJSON(url[1]).then(function(res){
-            result[url[0]]=res
-        })
-    })
-
-    return Promise.all(promises).then(function(){
-        return result
-    })
-}
