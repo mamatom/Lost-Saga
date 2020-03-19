@@ -1,13 +1,8 @@
-$.holdReady(true);
-    const jsonList = {
-        heroes      :"./json/heroes.json"
-    }
-
-    var db = {}
-    LoadAllJsonObjects(jsonList).then(function(result) {
-        db = result
-        $.holdReady(false);
-    });
+var heroes;
+$.getJSON("./json/heroes.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+    heroes = json;
+});
 
 
 
