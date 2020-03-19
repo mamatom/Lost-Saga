@@ -31,16 +31,17 @@ main {
 #resultsContainer {
     position: relative;
     z-index: 600;
-    margin-top: -0.8rem;
+    margin-top: 0rem;
     margin-left: 8rem;
     max-width: 20rem;
+    background-color: #070c11;
 }
 
 .heroResults {
 
     list-style-type: none;
     max-width: 20rem;
-    background-color: #070c11;
+    
 
     
 
@@ -48,6 +49,21 @@ main {
 
 .resultsImg {
     z-index: 700;
-    padding: 23px; 
     padding-bottom: 0;
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    vertical-align: -18px;
+    position: relative;
+}
+
+.resultsTxt {
+    position: relative;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.resultsList {
+    margin-bottom: 5px;
+    display: block;
 }

@@ -19,7 +19,7 @@ function populateHeroes(name,isenter = false) {
     else
         inputs = name.value
  
-    $("#resultsContainer").show();
+    
     if( name != ""){
         var results = [];
         var found;
@@ -39,10 +39,19 @@ function populateHeroes(name,isenter = false) {
             }
         })
         console.log(results);
-        var pos = 0,
-            image = '<a class="resultsImg" style="background: url(https://sites.google.com/site/llsthum/img.jpg)'+pos+'px 0px;"></a>'
+        $("#resultsContainer").empty();
+        $("#resultsContainer").show();
+        var list,
+            pos = 0,
+            text,
+            image = '<a class="resultsImg" style="background: url(https://sites.google.com/site/llsthum/img.jpg)'+pos+'px 0px;"></a>';
         for(i=0;i<results.length;i++){
-            
+            pos = -1*((results[i].id-1)*48);
+            image = '<a class="resultsImg" style="background: url(https://sites.google.com/site/llsthum/img.jpg) '+ pos +'px 0px;"></a>';
+            text = '<a class="resultsTxt">'+results[i].name+'</a>'
+            list = '<li class="resultsList">'+image+text+'</li>'
+            $("#resultsContainer").append(list);
+
             
         }
 
