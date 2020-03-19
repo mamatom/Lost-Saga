@@ -28,23 +28,29 @@ main {
     z-index: 1;
 }
 
+.heroInput {
+    margin-top: 0.6rem;
+    font-family: 'Mitr';
+    font-size: 22px;    
+    border: none;
+    padding-left: 1rem;
+}
+
 #resultsContainer {
     position: relative;
     z-index: 600;
-    margin-top: 0rem;
     margin-left: 8rem;
-    max-width: 20rem;
+    width: 22rem;
+
+    max-height: 30rem;
     background-color: #070c11;
+    overflow: scroll;
 }
 
 .heroResults {
 
     list-style-type: none;
-    max-width: 20rem;
     
-
-    
-
 }
 
 .resultsImg {
