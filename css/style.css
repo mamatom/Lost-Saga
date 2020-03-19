@@ -1,0 +1,47 @@
+:root {
+    font-size: 16px;
+    font-family: 'Mitr';
+    --text-primary:#6497b1;
+    --text-secondary:#b3cde0;
+    --bg-pimary:#03396c;
+    --bg-secondary: #091724;
+}
+
+body {
+    color: #b3cde0;
+    background-color :#091724;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.navbar {
+    top: 0;
+    height: 3.5rem;
+    width: 100%;
+    position: fixed;
+    background-color: var(--bg-pimary);
+    z-index: 1;
+}
+
+#resultsContainer {
+    position: relative;
+    z-index: 600;
+    margin-top: -0.8rem;
+    margin-left: 8rem;
+    max-width: 20rem;
+}
+
+.heroResults {
+
+    list-style-type: none;
+    max-width: 20rem;
+    background-color: #070c11;
+
+    
+
+}

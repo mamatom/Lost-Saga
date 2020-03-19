@@ -1,0 +1,850 @@
+[
+   {
+      "name":"Iron Knight",
+      "id":1
+   },
+   {
+      "name":"Captain Hook",
+      "id":2
+   },
+   {
+      "name":"Western Gunman",
+      "id":3
+   },
+   {
+      "name":"Fire Mage",
+      "id":4
+   },
+   {
+      "name":"Cyber Medic",
+      "id":5
+   },
+   {
+      "name":"Savage Berserker",
+      "id":6
+   },
+   {
+      "name":"Robin Hood",
+      "id":7
+   },
+   {
+      "name":"Crazy Miner",
+      "id":8
+   },
+   {
+      "name":"Ice Mage",
+      "id":9
+   },
+   {
+      "name":"Army Footman",
+      "id":10
+   },
+   {
+      "name":"Space Soldier",
+      "id":11
+   },
+   {
+      "name":"Shadow Assassin",
+      "id":12
+   },
+   {
+      "name":"Victory Defender",
+      "id":13
+   },
+   {
+      "name":"Blue dragon Guanyu",
+      "id":14
+   },
+   {
+      "name":"Wild Boxer",
+      "id":15
+   },
+   {
+      "name":"Viking Sven",
+      "id":16
+   },
+   {
+      "name":"Kage Ninja",
+      "id":17
+   },
+   {
+      "name":"Musketeer",
+      "id":18
+   },
+   {
+      "name":"Taekwon Master",
+      "id":19
+   },
+   {
+      "name":"Dark Shaman",
+      "id":20
+   },
+   {
+      "name":"Smile Joker",
+      "id":21
+   },
+   {
+      "name":"Treasure Hunter",
+      "id":22
+   },
+   {
+      "name":"Grim Reaper",
+      "id":23
+   },
+   {
+      "name":"Lightning Mage",
+      "id":24
+   },
+   {
+      "name":"Mighty Paladin",
+      "id":25
+   },
+   {
+      "name":"Mafia",
+      "id":26
+   },
+   {
+      "name":"Tiger",
+      "id":27
+   },
+   {
+      "name":"Saladin",
+      "id":28
+   },
+   {
+      "name":"Death Knight",
+      "id":29
+   },
+   {
+      "name":"Sol Badguy",
+      "id":30
+   },
+   {
+      "name":"Heavy Crasher",
+      "id":31
+   },
+   {
+      "name":"Special Force",
+      "id":32
+   },
+   {
+      "name":"Samurai",
+      "id":33
+   },
+   {
+      "name":"Running Back",
+      "id":34
+   },
+   {
+      "name":"Chaos Daliah",
+      "id":35
+   },
+   {
+      "name":"Zorro",
+      "id":36
+   },
+   {
+      "name":"Jin Kisaragi",
+      "id":37
+   },
+   {
+      "name":"Necromancer",
+      "id":38
+   },
+   {
+      "name":"Kung Fu Master",
+      "id":39
+   },
+   {
+      "name":"Spartacus",
+      "id":40
+   },
+   {
+      "name":"Exorcist",
+      "id":41
+   },
+   {
+      "name":"Pro Wrestler",
+      "id":42
+   },
+   {
+      "name":"Magic Lancer",
+      "id":43
+   },
+   {
+      "name":"Puppeteer",
+      "id":44
+   },
+   {
+      "name":"Hawkeye",
+      "id":45
+   },
+   {
+      "name":"Devil Ranger",
+      "id":46
+   },
+   {
+      "name":"Lancer",
+      "id":47
+   },
+   {
+      "name":"Priest",
+      "id":48
+   },
+   {
+      "name":"Capoeira",
+      "id":49
+   },
+   {
+      "name":"Ragna",
+      "id":50
+   },
+   {
+      "name":"Son O Kong",
+      "id":51
+   },
+   {
+      "name":"Baek Dong Su",
+      "id":52
+   },
+   {
+      "name":"Indian",
+      "id":53
+   },
+   {
+      "name":"Hazama",
+      "id":54
+   },
+   {
+      "name":"Rockstar",
+      "id":55
+   },
+   {
+      "name":"Changchun",
+      "id":56
+   },
+   {
+      "name":"Werewolf",
+      "id":57
+   },
+   {
+      "name":"May",
+      "id":58
+   },
+   {
+      "name":"Muay Thai",
+      "id":59
+   },
+   {
+      "name":"Chaos Refud",
+      "id":60
+   },
+   {
+      "name":"Gatotkaca",
+      "id":61
+   },
+   {
+      "name":"Rachel Alucard",
+      "id":62
+   },
+   {
+      "name":"Iljimae",
+      "id":63
+   },
+   {
+      "name":"Hong Gildong",
+      "id":64
+   },
+   {
+      "name":"Witch",
+      "id":65
+   },
+   {
+      "name":"V-Mechanic",
+      "id":66
+   },
+   {
+      "name":"Arthur",
+      "id":67
+   },
+   {
+      "name":"Zhao Yun",
+      "id":68
+   },
+   {
+      "name":"Card Magician",
+      "id":69
+   },
+   {
+      "name":"Barbarian",
+      "id":70
+   },
+   {
+      "name":"Iori Yagami",
+      "id":71
+   },
+   {
+      "name":"D'Artagnan",
+      "id":72
+   },
+   {
+      "name":"Graffiti",
+      "id":73
+   },
+   {
+      "name":"Haohmaru",
+      "id":74
+   },
+   {
+      "name":"Phantom",
+      "id":75
+   },
+   {
+      "name":"Sorcerer",
+      "id":76
+   },
+   {
+      "name":"Mai Shiranui",
+      "id":77
+   },
+   {
+      "name":"Zhuge Liang",
+      "id":78
+   },
+   {
+      "name":"Forcer",
+      "id":79
+   },
+   {
+      "name":"Yumira",
+      "id":80
+   },
+   {
+      "name":"Lucifer",
+      "id":81
+   },
+   {
+      "name":"Kyo Kusanagi",
+      "id":82
+   },
+   {
+      "name":"Desperado",
+      "id":83
+   },
+   {
+      "name":"Nakoruru",
+      "id":84
+   },
+   {
+      "name":"Destroyer",
+      "id":85
+   },
+   {
+      "name":"Michael",
+      "id":86
+   },
+   {
+      "name":"Doggaebi",
+      "id":87
+   },
+   {
+      "name":"Gumiho",
+      "id":88
+   },
+   {
+      "name":"Peter Pan",
+      "id":89
+   },
+   {
+      "name":"Dragon Rider",
+      "id":90
+   },
+   {
+      "name":"Succubus",
+      "id":91
+   },
+   {
+      "name":"Cyborg",
+      "id":92
+   },
+   {
+      "name":"Trinity",
+      "id":93
+   },
+   {
+      "name":"Hwarang",
+      "id":94
+   },
+   {
+      "name":"Windrunner",
+      "id":95
+   },
+   {
+      "name":"Monk",
+      "id":96
+   },
+   {
+      "name":"Anubis",
+      "id":97
+   },
+   {
+      "name":"Kali",
+      "id":98
+   },
+   {
+      "name":"Skadi",
+      "id":99
+   },
+   {
+      "name":"Demon Thief",
+      "id":100
+   },
+   {
+      "name":"Jin Mo-Ri",
+      "id":101
+   },
+   {
+      "name":"Vampire",
+      "id":102
+   },
+   {
+      "name":"Project K",
+      "id":103
+   },
+   {
+      "name":"Hakumen",
+      "id":104
+   },
+   {
+      "name":"Devil",
+      "id":105
+   },
+   {
+      "name":"Maid",
+      "id":106
+   },
+   {
+      "name":"Flash",
+      "id":107
+   },
+   {
+      "name":"Evy",
+      "id":108
+   },
+   {
+      "name":"Psychometry",
+      "id":109
+   },
+   {
+      "name":"Sudden Attack",
+      "id":110
+   },
+   {
+      "name":"Slasher",
+      "id":111
+   },
+   {
+      "name":"Son Tae-Yang",
+      "id":112
+   },
+   {
+      "name":"Earth Mage",
+      "id":113
+   },
+   {
+      "name":"Titan",
+      "id":114
+   },
+   {
+      "name":"Time Space",
+      "id":115
+   },
+   {
+      "name":"Kim Yun Seong",
+      "id":116
+   },
+   {
+      "name":"Arcanist",
+      "id":117
+   },
+   {
+      "name":"Galaxy",
+      "id":118
+   },
+   {
+      "name":"Dragon Slayer",
+      "id":119
+   },
+   {
+      "name":"Nang In",
+      "id":120
+   },
+   {
+      "name":"Striker",
+      "id":121
+   },
+   {
+      "name":"Don Quixote",
+      "id":122
+   },
+   {
+      "name":"Dragon Nest Assassin",
+      "id":123
+   },
+   {
+      "name":"Thunderbird",
+      "id":124
+   },
+   {
+      "name":"Alice",
+      "id":125
+   },
+   {
+      "name":"Bruce Lee",
+      "id":126
+   },
+   {
+      "name":"Valkyrie",
+      "id":127
+   },
+   {
+      "name":"Park Il-Pyo",
+      "id":128
+   },
+   {
+      "name":"Earthquake",
+      "id":129
+   },
+   {
+      "name":"Jack O' Lantern",
+      "id":130
+   },
+   {
+      "name":"Pentjak Silat",
+      "id":131
+   },
+   {
+      "name":"Shadow Ranger",
+      "id":132
+   },
+   {
+      "name":"Dark Knight",
+      "id":133
+   },
+   {
+      "name":"Jumper",
+      "id":134
+   },
+   {
+      "name":"Engineer",
+      "id":135
+   },
+   {
+      "name":"Geomje",
+      "id":136
+   },
+   {
+      "name":"Zeus",
+      "id":137
+   },
+   {
+      "name":"F-Saber",
+      "id":138
+   },
+   {
+      "name":"Outboxer",
+      "id":139
+   },
+   {
+      "name":"Death Angel",
+      "id":140
+   },
+   {
+      "name":"Hades",
+      "id":141
+   },
+   {
+      "name":"Magic Swordsman",
+      "id":142
+   },
+   {
+      "name":"Nata",
+      "id":143
+   },
+   {
+      "name":"Yi Sun-Sin",
+      "id":144
+   },
+   {
+      "name":"Researcher",
+      "id":145
+   },
+   {
+      "name":"Blade",
+      "id":146
+   },
+   {
+      "name":"Bullfight",
+      "id":147
+   },
+   {
+      "name":"Jeon Woo Chi",
+      "id":148
+   },
+   {
+      "name":"Hwanma Gangsi",
+      "id":149
+   },
+   {
+      "name":"Chemical",
+      "id":150
+   },
+   {
+      "name":"Chain Magician",
+      "id":151
+   },
+   {
+      "name":"Red Hood",
+      "id":152
+   },
+   {
+      "name":"Strider",
+      "id":153
+   },
+   {
+      "name":"Nephilim",
+      "id":154
+   },
+   {
+      "name":"Apostate",
+      "id":155
+   },
+   {
+      "name":"Mutant",
+      "id":156
+   },
+   {
+      "name":"Ganesha",
+      "id":157
+   },
+   {
+      "name":"Mir 2 - Warrior",
+      "id":158
+   },
+   {
+      "name":"Cuchulain",
+      "id":159
+   },
+   {
+      "name":"Galford",
+      "id":160
+   },
+   {
+      "name":"Gwimusa",
+      "id":161
+   },
+   {
+      "name":"Druid",
+      "id":162
+   },
+   {
+      "name":"Jin Sasinmu",
+      "id":163
+   },
+   {
+      "name":"Dark Sith",
+      "id":164
+   },
+   {
+      "name":"Predator",
+      "id":165
+   },
+   {
+      "name":"Crow",
+      "id":166
+   },
+   {
+      "name":"Soul Master",
+      "id":167
+   },
+   {
+      "name":"Black Spear",
+      "id":168
+   },
+   {
+      "name":"Mephisto",
+      "id":169
+   },
+   {
+      "name":"Gunner",
+      "id":170
+   },
+   {
+      "name":"Powered",
+      "id":171
+   },
+   {
+      "name":"Trap Master",
+      "id":172
+   },
+   {
+      "name":"BTS",
+      "id":173
+   },
+   {
+      "name":"Witch Doctor",
+      "id":174
+   },
+   {
+      "name":"Surfer",
+      "id":175
+   },
+   {
+      "name":"Bubble Fighter",
+      "id":176
+   },
+   {
+      "name":"Hong Jin-Young",
+      "id":177
+   },
+   {
+      "name":"Uriel",
+      "id":178
+   },
+   {
+      "name":"Patriot",
+      "id":179
+   },
+   {
+      "name":"Pungsin",
+      "id":180
+   },
+   {
+      "name":"Warp",
+      "id":181
+   },
+   {
+      "name":"Rudolph",
+      "id":182
+   },
+   {
+      "name":"Drill",
+      "id":183
+   },
+   {
+      "name":"Stranger",
+      "id":184
+   },
+   {
+      "name":"Gargoyle",
+      "id":185
+   },
+   {
+      "name":"Hacker",
+      "id":186
+   },
+   {
+      "name":"Cannon",
+      "id":187
+   },
+   {
+      "name":"Magic Engineer",
+      "id":188
+   },
+   {
+      "name":"Vagabond",
+      "id":189
+   },
+   {
+      "name":"Kungfu Master",
+      "id":190
+   },
+   {
+      "name":"Nightmare",
+      "id":191
+   },
+   {
+      "name":"Azazel",
+      "id":192
+   },
+   {
+      "name":"Mega Agent",
+      "id":193
+   },
+   {
+      "name":"Neo",
+      "id":194
+   },
+   {
+      "name":"Santa",
+      "id":195
+   },
+   {
+      "name":"Jack Frost",
+      "id":196
+   },
+   {
+      "name":"Automaton",
+      "id":197
+   },
+   {
+      "name":"Gardener",
+      "id":198
+   },
+   {
+      "name":"Megabat",
+      "id":199
+   },
+   {
+      "name":"Karate Fighter",
+      "id":200
+   },
+   {
+      "name":"Soccer",
+      "id":201
+   },
+   {
+      "name":"Vulcan",
+      "id":202
+   },
+   {
+      "name":"Bubble",
+      "id":203
+   },
+   {
+      "name":"R-Cyber Medic",
+      "id":505
+   },
+   {
+      "name":"R-Ice Mage",
+      "id":509
+   },
+   {
+      "name":"R-Blue Dragon Guanyu",
+      "id":514
+   },
+   {
+      "name":"IDOL. Sowon",
+      "id":807
+   },
+   {
+      "name":"IDOL. Yuju",
+      "id":885
+   },
+   {
+      "name":"IDOL. SinB",
+      "id":902
+   },
+   {
+      "name":"IDOL. Yerin",
+      "id":920
+   },
+   {
+      "name":"IDOL. Umji",
+      "id":926
+   },
+   {
+      "name":"IDOL. Eunha",
+      "id":938
+   }
+]
