@@ -3,11 +3,7 @@ $.holdReady(true);
 var heroes = $.getJSON("./json/heroes.json", function (json) {
     //console.log(json);
     heroes = json;
-
-
     $.holdReady(false);
-
-
 });
 
 $(document).ready(function populateHeroes() {
@@ -25,7 +21,6 @@ $(document).ready(function populateHeroes() {
 
 function filterHeroes(name, isenter = false) {
     var inputs
-
     // console.log(name.value);
     if (isenter)
         inputs = name
@@ -60,8 +55,6 @@ function filterHeroes(name, isenter = false) {
                     'hlTxt': hlString,
                     'txt': string
                 });
-
-
             }
         })
         var toRemove = lastResultsId.filter(x => !newResultsId.includes(x));
@@ -100,8 +93,6 @@ function filterHeroes(name, isenter = false) {
                 $("#heroId" + results[i].id).show();
             }
             lastResultsId.push(results[i].id);
-
-
         }
         //  console.log(lastResultsId);
     } else {
