@@ -1,15 +1,15 @@
 :root {
     font-size: 16px;
     font-family: 'Mitr';
-    --text-primary:#6497b1;
-    --text-secondary:#b3cde0;
-    --bg-pimary:#03396c;
+    --text-primary: #6497b1;
+    --text-secondary: #b3cde0;
+    --bg-pimary: #03396c;
     --bg-secondary: #091724;
 }
 
 body {
     color: #b3cde0;
-    background-color :#091724;
+    background-color: #091724;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +31,7 @@ main {
 .heroInput {
     margin-top: 0.6rem;
     font-family: 'Mitr';
-    font-size: 22px;    
+    font-size: 22px;
     border: none;
     padding-left: 1rem;
 }
@@ -49,7 +49,7 @@ main {
 .heroResults {
 
     list-style-type: none;
-    
+
 }
 
 .resultsImg {
