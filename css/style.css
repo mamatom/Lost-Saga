@@ -39,10 +39,8 @@ main {
 #resultsContainer {
     position: relative;
     z-index: 600;
-    margin-left: 8rem;
-    width: 22rem;
-
-    max-height: 30rem;
+    width: 20rem;
+    height: 30rem;
     background-color: #070c11;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -75,6 +73,10 @@ main {
 .resultsList {
     margin-bottom: 5px;
     display: block;
+}
+
+.txt {
+    color: var(--text-primary);
 }
 
 .hlTxt {

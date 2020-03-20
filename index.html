@@ -16,18 +16,12 @@
 <body>
     <nav class="navbar">
         <div style="margin-left:8rem; height: 3rem;">
-            <input class="heroInput" type="text" autocomplete="off" name="heroName" id="heroName" placeholder="Enter Hero Name..." onkeyup="populateHeroes(this)">
-        </div>
-        <div id="resultsContainer">
-            <ul class="heroResults">
-                <li class="resultsList">
-                    <a class="resultsImg" style="background: url(https://sites.google.com/site/llsthum/img.jpg) 0px 0px;"></a>
-                    <a class="resultsTxt">Iron Knight</a>
-                </li>
+            <input class="heroInput" type="text" autocomplete="off" name="heroName" id="heroName" placeholder="Enter Hero Name..." onkeyup="filterHeroes(this)" >
+            <div id="resultsContainer">
 
-            </ul>
-        
+            </div>
         </div>
+        
         <script>$("#resultsContainer").hide();</script>
     </nav>
     
