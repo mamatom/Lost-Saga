@@ -1,50 +1,11 @@
 $.holdReady(true);
 var heroes = $.getJSON("./json/heroes.json", function(json) {
-    console.log(json);
+    //console.log(json);
     heroes = json;
     $.holdReady(false);
     
     
 });
-
-
-
-function highlight(name,isenter = false){
-
-    if(isenter)
-        inputs = name
-    else
-        inputs = name.value
-    if(inputs != ""){
-        var char = "Iron Knight";
-        var reg = RegExp(inputs,'i');
-        var string = [],
-            hlString = [];
-        console.log(char.search(reg) != -1);
-        while (char.search(reg)!= -1) {
-            search = char.search(reg);
-            string.push(char.slice(0,search));
-            hlString.push(char.slice(search,search+inputs.length));
-            char = char.substr(search+inputs.length);   
-            }
-            string.push(char);
-        console.log(string);
-
-        $(".test").empty();
-        for(i=0 ; i < string.length ; i++){
-            var txt = '<a class="txt">' + string[i] + '</a>',
-                hlTxt = '<a class="hlTxt">' + hlString[i] +'</a>';
-            $(".test").append(txt);
-            if(i != string.length-1){
-                $(".test").append(hlTxt); 
-            }  
-        }
-    }else{
-        $(".test").empty();
-    }
-}
-
-
 
 
 function populateHeroes(name,isenter = false) {
@@ -69,7 +30,7 @@ function populateHeroes(name,isenter = false) {
             if(search!=-1){ 
                 var string = [],
                     hlString = [];
-                console.log(char.search(reg) != -1);
+            //    console.log(char.search(reg) != -1);
                 while (char.search(reg)!= -1) {
                     search = char.search(reg);
                     string.push(char.slice(0,search));
@@ -82,14 +43,14 @@ function populateHeroes(name,isenter = false) {
                
             }
         })
-        console.log(results);
+        //console.log(results);
         $("#resultsContainer").empty();
         $("#resultsContainer").show();
         var list,imgPos = 0,text = '',image;
         for(i=0;i<results.length;i++){
             imgPos = -1*((results[i].id-1)*48);
             text ='';
-            console.log(results[i].txt);
+            //console.log(results[i].txt);
             image = '<a class="resultsImg" style="background: url(./img/heroFace.jpg) '+ imgPos +'px 0px;"></a>';
             for(j=0 ; j < results[i].txt.length ; j++){
                 var txt = '<a class="txt">' + results[i].txt[j] + '</a>',
