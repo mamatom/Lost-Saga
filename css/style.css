@@ -44,7 +44,8 @@ main {
 
     max-height: 30rem;
     background-color: #070c11;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .heroResults {
@@ -58,6 +59,7 @@ main {
     padding-bottom: 0;
     height: 48px;
     width: 48px;
+    margin-left: 5px;
     display: inline-block;
     vertical-align: -18px;
     position: relative;
@@ -67,9 +69,14 @@ main {
     position: relative;
     margin-left: 1rem;
     font-size: 20px;
+    display: inline;
 }
 
 .resultsList {
     margin-bottom: 5px;
     display: block;
+}
+
+.hlTxt {
+    color: darkorange;
 }
