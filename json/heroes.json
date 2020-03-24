@@ -1,850 +1,1062 @@
 [
    {
       "name":"Iron Knight",
-      "id":1
+      "id":1,
+      "type":"melee"
    },
    {
       "name":"Captain Hook",
-      "id":2
+      "id":2,
+      "type":"special"
    },
    {
       "name":"Western Gunman",
-      "id":3
+      "id":3,
+      "type":"ranged"
    },
    {
       "name":"Fire Mage",
-      "id":4
+      "id":4,
+      "type":"magic"
    },
    {
       "name":"Cyber Medic",
-      "id":5
+      "id":5,
+      "type":"magic"
    },
    {
       "name":"Savage Berserker",
-      "id":6
+      "id":6,
+      "type":"melee"
    },
    {
       "name":"Robin Hood",
-      "id":7
+      "id":7,
+      "type":"ranged"
    },
    {
       "name":"Crazy Miner",
-      "id":8
+      "id":8,
+      "type":"special"
    },
    {
       "name":"Ice Mage",
-      "id":9
+      "id":9,
+      "type":"magic"
    },
    {
       "name":"Army Footman",
-      "id":10
+      "id":10,
+      "type":"ranged"
    },
    {
       "name":"Space Soldier",
-      "id":11
+      "id":11,
+      "type":"ranged"
    },
    {
       "name":"Shadow Assassin",
-      "id":12
+      "id":12,
+      "type":"melee"
    },
    {
       "name":"Victory Defender",
-      "id":13
+      "id":13,
+      "type":"melee"
    },
    {
       "name":"Blue dragon Guanyu",
-      "id":14
+      "id":14,
+      "type":"melee"
    },
    {
       "name":"Wild Boxer",
-      "id":15
+      "id":15,
+      "type":"melee"
    },
    {
       "name":"Viking Sven",
-      "id":16
+      "id":16,
+      "type":"melee"
    },
    {
       "name":"Kage Ninja",
-      "id":17
+      "id":17,
+      "type":"melee"
    },
    {
       "name":"Musketeer",
-      "id":18
+      "id":18,
+      "type":"ranged"
    },
    {
       "name":"Taekwon Master",
-      "id":19
+      "id":19,
+      "type":"melee"
    },
    {
       "name":"Dark Shaman",
-      "id":20
+      "id":20,
+      "type":"magic"
    },
    {
       "name":"Smile Joker",
-      "id":21
+      "id":21,
+      "type":"melee"
    },
    {
       "name":"Treasure Hunter",
-      "id":22
+      "id":22,
+      "type":"ranged"
    },
    {
       "name":"Grim Reaper",
-      "id":23
+      "id":23,
+      "type":"melee"
    },
    {
       "name":"Lightning Mage",
-      "id":24
+      "id":24,
+      "type":"magic"
    },
    {
       "name":"Mighty Paladin",
-      "id":25
+      "id":25,
+      "type":"melee"
    },
    {
       "name":"Mafia",
-      "id":26
+      "id":26,
+      "type":"ranged"
    },
    {
       "name":"Tiger",
-      "id":27
+      "id":27,
+      "type":"melee"
    },
    {
       "name":"Saladin",
-      "id":28
+      "id":28,
+      "type":"melee"
    },
    {
       "name":"Death Knight",
-      "id":29
+      "id":29,
+      "type":"melee"
    },
    {
       "name":"Sol Badguy",
-      "id":30
+      "id":30,
+      "type":"melee"
    },
    {
       "name":"Heavy Crasher",
-      "id":31
+      "id":31,
+      "type":"special"
    },
    {
       "name":"Special Force",
-      "id":32
+      "id":32,
+      "type":"ranged"
    },
    {
       "name":"Samurai",
-      "id":33
+      "id":33,
+      "type":"melee"
    },
    {
       "name":"Running Back",
-      "id":34
+      "id":34,
+      "type":"melee"
    },
    {
       "name":"Chaos Daliah",
-      "id":35
+      "id":35,
+      "type":"ranged"
    },
    {
       "name":"Zorro",
-      "id":36
+      "id":36,
+      "type":"melee"
    },
    {
       "name":"Jin Kisaragi",
-      "id":37
+      "id":37,
+      "type":"melee"
    },
    {
       "name":"Necromancer",
-      "id":38
+      "id":38,
+      "type":"magic"
    },
    {
       "name":"Kung Fu Master",
-      "id":39
+      "id":39,
+      "type":"melee"
    },
    {
       "name":"Spartacus",
-      "id":40
+      "id":40,
+      "type":"melee"
    },
    {
       "name":"Exorcist",
-      "id":41
+      "id":41,
+      "type":"special"
    },
    {
       "name":"Pro Wrestler",
-      "id":42
+      "id":42,
+      "type":"melee"
    },
    {
       "name":"Magic Lancer",
-      "id":43
+      "id":43,
+      "type":"special"
    },
    {
       "name":"Puppeteer",
-      "id":44
+      "id":44,
+      "type":"special"
    },
    {
       "name":"Hawkeye",
-      "id":45
+      "id":45,
+      "type":"melee"
    },
    {
       "name":"Devil Ranger",
-      "id":46
+      "id":46,
+      "type":"ranged"
    },
    {
       "name":"Lancer",
-      "id":47
+      "id":47,
+      "type":"melee"
    },
    {
       "name":"Priest",
-      "id":48
+      "id":48,
+      "type":"melee"
    },
    {
       "name":"Capoeira",
-      "id":49
+      "id":49,
+      "type":"melee"
    },
    {
       "name":"Ragna",
-      "id":50
+      "id":50,
+      "type":"melee"
    },
    {
       "name":"Son O Kong",
-      "id":51
+      "id":51,
+      "type":"melee"
    },
    {
       "name":"Baek Dong Su",
-      "id":52
+      "id":52,
+      "type":"melee"
    },
    {
       "name":"Indian",
-      "id":53
+      "id":53,
+      "type":"melee"
    },
    {
       "name":"Hazama",
-      "id":54
+      "id":54,
+      "type":"melee"
    },
    {
       "name":"Rockstar",
-      "id":55
+      "id":55,
+      "type":"special"
    },
    {
       "name":"Changchun",
-      "id":56
+      "id":56,
+      "type":"melee"
    },
    {
       "name":"Werewolf",
-      "id":57
+      "id":57,
+      "type":"special"
    },
    {
       "name":"May",
-      "id":58
+      "id":58,
+      "type":"melee"
    },
    {
       "name":"Muay Thai",
-      "id":59
+      "id":59,
+      "type":"melee"
    },
    {
       "name":"Chaos Refud",
-      "id":60
+      "id":60,
+      "type":"special"
    },
    {
       "name":"Gatotkaca",
-      "id":61
+      "id":61,
+      "type":"melee"
    },
    {
       "name":"Rachel Alucard",
-      "id":62
+      "id":62,
+      "type":"special"
    },
    {
       "name":"Iljimae",
-      "id":63
+      "id":63,
+      "type":"melee"
    },
    {
       "name":"Hong Gildong",
-      "id":64
+      "id":64,
+      "type":"melee"
    },
    {
       "name":"Witch",
-      "id":65
+      "id":65,
+      "type":"magic"
    },
    {
       "name":"V-Mechanic",
-      "id":66
+      "id":66,
+      "type":"melee"
    },
    {
       "name":"Arthur",
-      "id":67
+      "id":67,
+      "type":"melee"
    },
    {
       "name":"Zhao Yun",
-      "id":68
+      "id":68,
+      "type":"melee"
    },
    {
       "name":"Card Magician",
-      "id":69
+      "id":69,
+      "type":"melee"
    },
    {
       "name":"Barbarian",
-      "id":70
+      "id":70,
+      "type":"melee"
    },
    {
       "name":"Iori Yagami",
-      "id":71
+      "id":71,
+      "type":"melee"
    },
    {
       "name":"D'Artagnan",
-      "id":72
+      "id":72,
+      "type":"melee"
    },
    {
       "name":"Graffiti",
-      "id":73
+      "id":73,
+      "type":"melee"
    },
    {
       "name":"Haohmaru",
-      "id":74
+      "id":74,
+      "type":"melee"
    },
    {
       "name":"Phantom",
-      "id":75
+      "id":75,
+      "type":"special"
    },
    {
       "name":"Sorcerer",
-      "id":76
+      "id":76,
+      "type":"magic"
    },
    {
       "name":"Mai Shiranui",
-      "id":77
+      "id":77,
+      "type":"melee"
    },
    {
       "name":"Zhuge Liang",
-      "id":78
+      "id":78,
+      "type":"magic"
    },
    {
       "name":"Forcer",
-      "id":79
+      "id":79,
+      "type":"ranged"
    },
    {
       "name":"Yumira",
-      "id":80
+      "id":80,
+      "type":"melee"
    },
    {
       "name":"Lucifer",
-      "id":81
+      "id":81,
+      "type":"melee"
    },
    {
       "name":"Kyo Kusanagi",
-      "id":82
+      "id":82,
+      "type":"melee"
    },
    {
       "name":"Desperado",
-      "id":83
+      "id":83,
+      "type":"ranged"
    },
    {
       "name":"Nakoruru",
-      "id":84
+      "id":84,
+      "type":"melee"
    },
    {
       "name":"Destroyer",
-      "id":85
+      "id":85,
+      "type":"ranged"
    },
    {
       "name":"Michael",
-      "id":86
+      "id":86,
+      "type":"melee"
    },
    {
       "name":"Doggaebi",
-      "id":87
+      "id":87,
+      "type":"melee"
    },
    {
       "name":"Gumiho",
-      "id":88
+      "id":88,
+      "type":"melee"
    },
    {
       "name":"Peter Pan",
-      "id":89
+      "id":89,
+      "type":"melee"
    },
    {
       "name":"Dragon Rider",
-      "id":90
+      "id":90,
+      "type":"special"
    },
    {
       "name":"Succubus",
-      "id":91
+      "id":91,
+      "type":"special"
    },
    {
       "name":"Cyborg",
-      "id":92
+      "id":92,
+      "type":"melee"
    },
    {
       "name":"Trinity",
-      "id":93
+      "id":93,
+      "type":"special"
    },
    {
       "name":"Hwarang",
-      "id":94
+      "id":94,
+      "type":"melee"
    },
    {
       "name":"Windrunner",
-      "id":95
+      "id":95,
+      "type":"special"
    },
    {
       "name":"Monk",
-      "id":96
+      "id":96,
+      "type":"melee"
    },
    {
       "name":"Anubis",
-      "id":97
+      "id":97,
+      "type":"melee"
    },
    {
       "name":"Kali",
-      "id":98
+      "id":98,
+      "type":"melee"
    },
    {
       "name":"Skadi",
-      "id":99
+      "id":99,
+      "type":"special"
    },
    {
       "name":"Demon Thief",
-      "id":100
+      "id":100,
+      "type":"special"
    },
    {
       "name":"Jin Mo-Ri",
-      "id":101
+      "id":101,
+      "type":"melee"
    },
    {
       "name":"Vampire",
-      "id":102
+      "id":102,
+      "type":"special"
    },
    {
       "name":"Project K",
-      "id":103
+      "id":103,
+      "type":"special"
    },
    {
       "name":"Hakumen",
-      "id":104
+      "id":104,
+      "type":"melee"
    },
    {
       "name":"Devil",
-      "id":105
+      "id":105,
+      "type":"special"
    },
    {
       "name":"Maid",
-      "id":106
+      "id":106,
+      "type":"melee"
    },
    {
       "name":"Flash",
-      "id":107
+      "id":107,
+      "type":"melee"
    },
    {
       "name":"Evy",
-      "id":108
+      "id":108,
+      "type":"melee"
    },
    {
       "name":"Psychometry",
-      "id":109
+      "id":109,
+      "type":"ranged"
    },
    {
       "name":"Sudden Attack",
-      "id":110
+      "id":110,
+      "type":"ranged"
    },
    {
       "name":"Slasher",
-      "id":111
+      "id":111,
+      "type":"melee"
    },
    {
       "name":"Son Tae-Yang",
-      "id":112
+      "id":112,
+      "type":"melee"
    },
    {
       "name":"Earth Mage",
-      "id":113
+      "id":113,
+      "type":"magic"
    },
    {
       "name":"Titan",
-      "id":114
+      "id":114,
+      "type":"melee"
    },
    {
       "name":"Time Space",
-      "id":115
+      "id":115,
+      "type":"melee"
    },
    {
       "name":"Kim Yun Seong",
-      "id":116
+      "id":116,
+      "type":"melee"
    },
    {
       "name":"Arcanist",
-      "id":117
+      "id":117,
+      "type":"magic"
    },
    {
       "name":"Galaxy",
-      "id":118
+      "id":118,
+      "type":"magic"
    },
    {
       "name":"Dragon Slayer",
-      "id":119
+      "id":119,
+      "type":"melee"
    },
    {
       "name":"Nang In",
-      "id":120
+      "id":120,
+      "type":"melee"
    },
    {
       "name":"Striker",
-      "id":121
+      "id":121,
+      "type":"melee"
    },
    {
       "name":"Don Quixote",
-      "id":122
+      "id":122,
+      "type":"melee"
    },
    {
       "name":"Dragon Nest Assassin",
-      "id":123
+      "id":123,
+      "type":"melee"
    },
    {
       "name":"Thunderbird",
-      "id":124
+      "id":124,
+      "type":"ranged"
    },
    {
       "name":"Alice",
-      "id":125
+      "id":125,
+      "type":"ranged"
    },
    {
       "name":"Bruce Lee",
-      "id":126
+      "id":126,
+      "type":"melee"
    },
    {
       "name":"Valkyrie",
-      "id":127
+      "id":127,
+      "type":"melee"
    },
    {
       "name":"Park Il-Pyo",
-      "id":128
+      "id":128,
+      "type":"melee"
    },
    {
       "name":"Earthquake",
-      "id":129
+      "id":129,
+      "type":"melee"
    },
    {
       "name":"Jack O' Lantern",
-      "id":130
+      "id":130,
+      "type":"melee"
    },
    {
       "name":"Pentjak Silat",
-      "id":131
+      "id":131,
+      "type":"melee"
    },
    {
       "name":"Shadow Ranger",
-      "id":132
+      "id":132,
+      "type":"melee"
    },
    {
       "name":"Dark Knight",
-      "id":133
+      "id":133,
+      "type":"melee"
    },
    {
       "name":"Jumper",
-      "id":134
+      "id":134,
+      "type":"melee"
    },
    {
       "name":"Engineer",
-      "id":135
+      "id":135,
+      "type":"special"
    },
    {
       "name":"Geomje",
-      "id":136
+      "id":136,
+      "type":"melee"
    },
    {
       "name":"Zeus",
-      "id":137
+      "id":137,
+      "type":"melee"
    },
    {
       "name":"F-Saber",
-      "id":138
+      "id":138,
+      "type":"melee"
    },
    {
       "name":"Outboxer",
-      "id":139
+      "id":139,
+      "type":"melee"
    },
    {
       "name":"Death Angel",
-      "id":140
+      "id":140,
+      "type":"special"
    },
    {
       "name":"Hades",
-      "id":141
+      "id":141,
+      "type":"melee"
    },
    {
       "name":"Magic Swordsman",
-      "id":142
+      "id":142,
+      "type":"special"
    },
    {
       "name":"Nata",
-      "id":143
+      "id":143,
+      "type":"melee"
    },
    {
       "name":"Yi Sun-Sin",
-      "id":144
+      "id":144,
+      "type":"melee"
    },
    {
       "name":"Researcher",
-      "id":145
+      "id":145,
+      "type":"ranged"
    },
    {
       "name":"Blade",
-      "id":146
+      "id":146,
+      "type":"special"
    },
    {
       "name":"Bullfight",
-      "id":147
+      "id":147,
+      "type":"melee"
    },
    {
       "name":"Jeon Woo Chi",
-      "id":148
+      "id":148,
+      "type":"melee"
    },
    {
       "name":"Hwanma Gangsi",
-      "id":149
+      "id":149,
+      "type":"melee"
    },
    {
       "name":"Chemical",
-      "id":150
+      "id":150,
+      "type":"melee"
    },
    {
       "name":"Chain Magician",
-      "id":151
+      "id":151,
+      "type":"magic"
    },
    {
       "name":"Red Hood",
-      "id":152
+      "id":152,
+      "type":"melee"
    },
    {
       "name":"Strider",
-      "id":153
+      "id":153,
+      "type":"melee"
    },
    {
       "name":"Nephilim",
-      "id":154
+      "id":154,
+      "type":"melee"
    },
    {
       "name":"Apostate",
-      "id":155
+      "id":155,
+      "type":"melee"
    },
    {
       "name":"Mutant",
-      "id":156
+      "id":156,
+      "type":"melee"
    },
    {
       "name":"Ganesha",
-      "id":157
+      "id":157,
+      "type":"melee"
    },
    {
       "name":"Mir 2 - Warrior",
-      "id":158
+      "id":158,
+      "type":"melee"
    },
    {
       "name":"Cuchulain",
-      "id":159
+      "id":159,
+      "type":"melee"
    },
    {
       "name":"Galford",
-      "id":160
+      "id":160,
+      "type":"melee"
    },
    {
       "name":"Gwimusa",
-      "id":161
+      "id":161,
+      "type":"melee"
    },
    {
       "name":"Druid",
-      "id":162
+      "id":162,
+      "type":"melee"
    },
    {
       "name":"Jin Sasinmu",
-      "id":163
+      "id":163,
+      "type":"melee"
    },
    {
       "name":"Dark Sith",
-      "id":164
+      "id":164,
+      "type":"melee"
    },
    {
       "name":"Predator",
-      "id":165
+      "id":165,
+      "type":"ranged"
    },
    {
       "name":"Crow",
-      "id":166
+      "id":166,
+      "type":"melee"
    },
    {
       "name":"Soul Master",
-      "id":167
+      "id":167,
+      "type":"special"
    },
    {
       "name":"Black Spear",
-      "id":168
+      "id":168,
+      "type":"melee"
    },
    {
       "name":"Mephisto",
-      "id":169
+      "id":169,
+      "type":"melee"
    },
    {
       "name":"Gunner",
-      "id":170
+      "id":170,
+      "type":"ranged"
    },
    {
       "name":"Powered",
-      "id":171
+      "id":171,
+      "type":"melee"
    },
    {
       "name":"Trap Master",
-      "id":172
+      "id":172,
+      "type":"special"
    },
    {
       "name":"BTS",
-      "id":173
+      "id":173,
+      "type":"melee"
    },
    {
       "name":"Witch Doctor",
-      "id":174
+      "id":174,
+      "type":"special"
    },
    {
       "name":"Surfer",
-      "id":175
+      "id":175,
+      "type":"melee"
    },
    {
       "name":"Bubble Fighter",
-      "id":176
+      "id":176,
+      "type":"ranged"
    },
    {
       "name":"Hong Jin-Young",
-      "id":177
+      "id":177,
+      "type":"ranged"
    },
    {
       "name":"Uriel",
-      "id":178
+      "id":178,
+      "type":"melee"
    },
    {
       "name":"Patriot",
-      "id":179
+      "id":179,
+      "type":"ranged"
    },
    {
       "name":"Pungsin",
-      "id":180
+      "id":180,
+      "type":"ranged"
    },
    {
       "name":"Warp",
-      "id":181
+      "id":181,
+      "type":"melee"
    },
    {
       "name":"Rudolph",
-      "id":182
+      "id":182,
+      "type":"melee"
    },
    {
       "name":"Drill",
-      "id":183
+      "id":183,
+      "type":"melee"
    },
    {
       "name":"Stranger",
-      "id":184
+      "id":184,
+      "type":"ranged"
    },
    {
       "name":"Gargoyle",
-      "id":185
+      "id":185,
+      "type":"special"
    },
    {
       "name":"Hacker",
-      "id":186
+      "id":186,
+      "type":"special"
    },
    {
       "name":"Cannon",
-      "id":187
+      "id":187,
+      "type":"ranged"
    },
    {
       "name":"Magic Engineer",
-      "id":188
+      "id":188,
+      "type":"melee"
    },
    {
       "name":"Vagabond",
-      "id":189
+      "id":189,
+      "type":"melee"
    },
    {
       "name":"Kungfu Master",
-      "id":190
+      "id":190,
+      "type":"melee"
    },
    {
       "name":"Nightmare",
-      "id":191
+      "id":191,
+      "type":"special"
    },
    {
       "name":"Azazel",
-      "id":192
+      "id":192,
+      "type":"melee"
    },
    {
       "name":"Mega Agent",
-      "id":193
+      "id":193,
+      "type":"ranged"
    },
    {
       "name":"Neo",
-      "id":194
+      "id":194,
+      "type":"melee"
    },
    {
       "name":"Santa",
-      "id":195
+      "id":195,
+      "type":"melee"
    },
    {
       "name":"Jack Frost",
-      "id":196
+      "id":196,
+      "type":"special"
    },
    {
       "name":"Automaton",
-      "id":197
+      "id":197,
+      "type":"melee"
    },
    {
       "name":"Gardener",
-      "id":198
+      "id":198,
+      "type":"special"
    },
    {
       "name":"Megabat",
-      "id":199
+      "id":199,
+      "type":"ranged"
    },
    {
       "name":"Karate Fighter",
-      "id":200
+      "id":200,
+      "type":"melee"
    },
    {
       "name":"Soccer",
-      "id":201
+      "id":201,
+      "type":"melee"
    },
    {
       "name":"Vulcan",
-      "id":202
+      "id":202,
+      "type":"ranged"
    },
    {
       "name":"Bubble",
-      "id":203
+      "id":203,
+      "type":"special"
    },
    {
       "name":"R-Cyber Medic",
-      "id":505
+      "id":505,
+      "type":"magic"
    },
    {
       "name":"R-Ice Mage",
-      "id":509
+      "id":509,
+      "type":"magic"
    },
    {
       "name":"R-Blue Dragon Guanyu",
-      "id":514
+      "id":514,
+      "type":"melee"
    },
    {
       "name":"IDOL. Sowon",
-      "id":807
+      "id":807,
+      "type":"ranged"
    },
    {
       "name":"IDOL. Yuju",
-      "id":885
+      "id":885,
+      "type":"ranged"
    },
    {
       "name":"IDOL. SinB",
-      "id":902
+      "id":902,
+      "type":"special"
    },
    {
       "name":"IDOL. Yerin",
-      "id":920
+      "id":920,
+      "type":"melee"
    },
    {
       "name":"IDOL. Umji",
-      "id":926
+      "id":926,
+      "type":"melee"
    },
    {
       "name":"IDOL. Eunha",
-      "id":938
+      "id":938,
+      "type":"melee"
    }
 ]

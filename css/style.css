@@ -34,6 +34,7 @@ main {
     font-size: 22px;
     border: none;
     padding-left: 1rem;
+    width: 19rem;
 }
 
 #resultsContainer {
@@ -42,19 +43,17 @@ main {
     width: 20rem;
     height: 30rem;
     background-color: #070c11;
+    
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.heroResults {
-
-    list-style-type: none;
-
+#resultsContainer :hover{
+    background-color:var(--bg-pimary);
 }
 
+
 .resultsImg {
-    z-index: 700;
-    padding-bottom: 0;
     height: 48px;
     width: 48px;
     margin-left: 5px;
@@ -70,9 +69,14 @@ main {
     display: inline;
 }
 
-.resultsList {
+.result{
     margin-bottom: 5px;
     display: block;
+    cursor: pointer;
+}
+
+.result :hover {
+    cursor: pointer;
 }
 
 .txt {
@@ -82,3 +86,20 @@ main {
 .hlTxt {
     color: darkorange;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f1;
+  }

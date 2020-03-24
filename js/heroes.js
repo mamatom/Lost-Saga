@@ -1,23 +1,48 @@
 
 var lastResultsId = [];
 $.holdReady(true);
-var heroes = $.getJSON("./json/heroes.json", function (json) {
+var heroesJson = $.getJSON("./json/newHeroes.json", function (json) {
     //console.log(json);
-    heroes = json;
+    heroesJson = json;
     $.holdReady(false);
 });
 
+
+ var newHeroJson = {};
+
+function newJson(){
+    $.each(heroesJson, function (_,hero){
+        var id = hero.id
+        //newHeroJson['id'+('00' + (id)).slice(-3)] = hero;
+        newHeroJson['heroId'+id] = hero;
+
+
+    });
+    console.log(JSON.stringify(newHeroJson));
+
+}
+
+function selectHero(heroId){
+    $('#resultsContainer').hide();
+    var id= ('00' + (heroId.id)).slice(-3);
+    $('#heroImg').attr('src','img/heroes sprite/'+id+'_M.png')
+    console.log(id);
+}
+
+
+
 $(document).ready(function populateHeroes() {
+    
     var image;
-    $.each(heroes, function (_, hero) {
+    $.each(heroesJson, function (_, hero) {
         var imgPos = -1 * ((hero.id - 1) * 48);
         var image = '<a class="resultsImg" style="background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px;"></a>';
-        var list = '<li class="resultsList" id="heroId' + hero.id + '">' + image + '<div class="resultsTxt">' + hero.name + '</div></li>'
+        var list = '<div class="result" onclick="selectHero(heroesJson.heroId' + hero.id+')" id="heroId' + hero.id + '">' + image + '<div class="resultsTxt">' + hero.name + '</div></div>'
         $("#resultsContainer").append(list);
         lastResultsId.push(hero.id);
     })
     $("#resultsContainer").hide();
-});
+});1
 
 
 function filterHeroes(name, isenter = false) {
@@ -31,7 +56,7 @@ function filterHeroes(name, isenter = false) {
         var newResultsId = [];
         var found;
         var reg = '/' + inputs + '/i'
-        $.each(heroes, function (_, hero) {
+        $.each(heroesJson, function (_, hero) {
             var char = hero.name;
             var reg = RegExp(inputs, 'i');
             search = char.search(reg);
