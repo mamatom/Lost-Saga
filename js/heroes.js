@@ -1,6 +1,6 @@
 var lastResultsId = [];
 $.holdReady(true);
-var heroesJson = $.getJSON("./json/heroes.json", function (heroes_json) {
+var heroesJson = $.getJSON("./json/ma.json", function (heroes_json) {
     console.log(heroes_json);
     heroesJson = heroes_json;
     $.holdReady(false);
