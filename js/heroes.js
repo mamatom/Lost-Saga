@@ -7,13 +7,7 @@ var heroesJson = $.getJSON("./json/Heroes.json", function (heroes_json) {
     
 
 });
-$.holdReady(true);
-var dataJson = $.getJSON("./json/data.json", function (data_json) {
-    console.log(data_json);
-    dataJson = data_json;
-    
-    $.holdReady(false);
-});
+
 
 var allData = {}; 
 
