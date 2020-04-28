@@ -135,7 +135,7 @@ function filterHeroes(name, isenter = false) {
         var newResultsId = [];
         var found;
         var reg = '/' + inputs + '/i'
-        $.each(heroesJson, function (_, hero) {
+        $.each(heroesJson, function (_,hero) {
             var char = hero.name;
             var reg = RegExp(inputs, 'i');
             search = char.search(reg);
