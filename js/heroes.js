@@ -1,92 +1,105 @@
 var lastResultsId = [];
 $.holdReady(true);
 var heroesJson = $.getJSON("./json/heroes.json", function (heroes_json) {
-    console.log(heroes_json);
+    //console.log(heroes_json);
     heroesJson = heroes_json;
     $.holdReady(false);
     
 
 });
 
+$(document).ready(
+    function populateHeroes() {
+        var image;
+        //console.log(heroesJson);
+        $.each(heroesJson, function (_, hero) {
+            var imgPos = -1 * ((hero.id - 1) * 48);
+            var image = '<a class="resultsImg" style="background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px;"></a>';
+            var list = '<div class="result" onclick="selectHero(heroesJson.heroId' + hero.id + ')" id="heroId' + hero.id + '">' + image + '<div class="resultsTxt">' + hero.name + '</div></div>'
+            $("#resultsContainer").append(list);
+            lastResultsId.push(hero.id);
+        })
+        $("#resultsContainer").hide();
+    
+      selectHero(heroesJson.heroId1,true);  
+    }  
+    );
 
-var allData = {}; 
 
 
 
-
-
-function newJson(){
-    $.each(heroesJson, function (_,hero){
+function newJson() {
+    $.each(heroesJson, function (_, hero) {
         var id = hero.id;
-        if(!dataJson['heroId'+id]){
-            dataJson['heroId'+id]= {};
+        if (!dataJson['heroId' + id]) {
+            dataJson['heroId' + id] = {};
         }
-        var data = dataJson['heroId'+id];
+        var data = dataJson['heroId' + id];
 
 
-        if(!data.rarity)
+        if (!data.rarity)
             data.rarity = "";
-        if(!data.evo)
+        if (!data.evo)
             data.evo = "";
-        if(!data.d)
+        if (!data.d)
             data.d = [];
-        if(!data.hold_d)
-            data.hold_d =[];
-        if(!data.half_d)
-            data.half_d =[];
-        if(!data.dash)
+        if (!data.hold_d)
+            data.hold_d = [];
+        if (!data.half_d)
+            data.half_d = [];
+        if (!data.dash)
             data.dash = [];
-        if(!data.dash_half_d)
-            data.dash_half_d =[];
-        if(!data.dash_hold_d)
+        if (!data.dash_half_d)
+            data.dash_half_d = [];
+        if (!data.dash_hold_d)
             data.dash_hold_d = [];
-        if(!data.air_d)
+        if (!data.air_d)
             data.air_d = [];
-        if(!data.air_half_d)
+        if (!data.air_half_d)
             data.air_half_d = [];
-        if(!data.air_hold_d)
+        if (!data.air_hold_d)
             data.air_hold_d = [];
-        if(!data.air_dash)
+        if (!data.air_dash)
             data.air_dash = [];
-        if(!data.special)
+        if (!data.special)
             data.special = [];
-        if(!data.counter)
+        if (!data.counter)
             data.counter = [];
-        if(!data.sd)
+        if (!data.sd)
             data.sd = [];
-        if(!data.tester)
+        if (!data.tester)
             data.tester = "";
-        if(!data.note)
+        if (!data.note)
             data.note = "";
 
 
 
 
-            newhero = {
-            "name":hero.name,
-            "id":hero.id,
-            "type":hero.type,
+        newhero = {
+            "name": hero.name,
+            "id": hero.id,
+            "type": hero.type,
             "rarity": data.rarity,
             "evo": data.evo,
             "d": data.d,
             "hold_d": data.hold_d,
-            "half_d":data.half_d,
-            "dash":data.dash,
-            "dash_half_d":data.dash_half_d,
-            "dash_hold_d":data.dash_hold_d,
-            "air_d":data.air_d,
-            "air_half_d":data.air_half_d,
-            "air_hold_d":data.air_hold_d,
-            "air_dash":data.air_dash,
-            "special":data.special,
-            "counter":data.counter,
-            "sd":data.sd,
-            "tester":data.tester,
-            "note":data.note
+            "half_d": data.half_d,
+            "dash": data.dash,
+            "dash_half_d": data.dash_half_d,
+            "dash_hold_d": data.dash_hold_d,
+            "air_d": data.air_d,
+            "air_half_d": data.air_half_d,
+            "air_hold_d": data.air_hold_d,
+            "air_dash": data.air_dash,
+            "special": data.special,
+            "counter": data.counter,
+            "sd": data.sd,
+            "tester": data.tester,
+            "note": data.note
 
-            }
+        }
 
-        allData['heroId'+id] = newhero;
+        allData['heroId' + id] = newhero;
 
     });
     //console.log(allData);
@@ -94,28 +107,78 @@ function newJson(){
 
 }
 
-function selectHero(heroId) {
+function selectHero(heroId,pageLoad = false) {
+    //console.log(heroId.id);
+    var timer = 1000;
+    if(pageLoad){
+        timer = 0;
+    }
     $('#resultsContainer').hide();
     var id = ('00' + (heroId.id)).slice(-3);
-    $('#heroImg').attr('style', 'background-image: url("img/heroes sprite/'+ id +'_M.png");');
+    $('#heroImg').attr('style', 'background-image: url("img/heroes sprite/' + id + '_M.png");');
     console.log(id);
+    //$('.damageContainer').hide(1000);
+
+    let hero = heroesJson['heroId' + heroId.id];
+    $('.heroNameContainer')[0].innerHTML = hero.name;
+    $('.heroType')[0].innerHTML = hero.type;
+    $('.heroRarit')[0].innerHTML = hero.rarity;
+
+    var slot = [
+        "id",
+        "type",
+        "rarity",
+        "note"
+    ]
+    for (i = 0; i < slot.length; i++) {
+        var infoSlot = document.getElementsByClassName(slot[i])[0];
+        infoSlot = infoSlot.getElementsByClassName('info')[0];
+        infoSlot = infoSlot.getElementsByTagName('p')[0];
+        infoSlot.innerHTML = hero[slot[i]];
+        if (hero[slot[i]].length == 0) {
+            infoSlot.innerHTML = 'ไม่มีหมายเหตุ'
+        }
+    }
+
+     slot = [
+        "d",
+        "hold_d",
+        "half_d",
+        "dash",
+        "dash_half_d",
+        "dash_hold_d",
+        "air_d",
+        "air_half_d",
+        "air_hold_d",
+        "air_dash",
+        "special",
+        "counter",
+        "sd"
+    ]
+    for (i = 0; i < slot.length; i++) {
+        var damageSlot = document.getElementsByClassName(slot[i])[0];
+        damageSlot = damageSlot.getElementsByClassName('damage')[0];
+        damageSlot = damageSlot.getElementsByTagName('p')[0];
+        damageSlot.innerHTML = hero[slot[i]];
+        if (i != 12) {
+            if (hero[slot[i]].length == 0) {
+                $('.' + slot[i]).hide(timer);
+            } else {
+                $('.' + slot[i]).show(timer);
+            }
+        } else {
+            if (hero[slot[i]].length == 0) {
+                damageSlot.innerHTML = 'ไม่มีข้อมูล'
+            }
+        }
+    }
 }
 
 
+//function genderSwitch(gender)
 
-$(document).ready(function populateHeroes() {
 
-    var image;
-    $.each(heroesJson, function (_, hero) {
-        var imgPos = -1 * ((hero.id - 1) * 48);
-        var image = '<a class="resultsImg" style="background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px;"></a>';
-        var list = '<div class="result" onclick="selectHero(heroesJson.heroId' + hero.id + ')" id="heroId' + hero.id + '">' + image + '<div class="resultsTxt">' + hero.name + '</div></div>'
-        $("#resultsContainer").append(list);
-        lastResultsId.push(hero.id);
-    })
-    $("#resultsContainer").hide();
-});
-1
+
 
 
 function filterHeroes(name, isenter = false) {
@@ -129,7 +192,7 @@ function filterHeroes(name, isenter = false) {
         var newResultsId = [];
         var found;
         var reg = '/' + inputs + '/i'
-        $.each(heroesJson, function (_,hero) {
+        $.each(heroesJson, function (_, hero) {
             var char = hero.name;
             var reg = RegExp(inputs, 'i');
             search = char.search(reg);
@@ -197,3 +260,6 @@ $(document).mouseup(function (e) {
         container.hide('linear');
     }
 });
+
+
+
