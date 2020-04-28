@@ -103,3 +103,9 @@ main {
   ::-webkit-scrollbar-thumb:hover {
     background: #f1f1f1;
   }
+
+  #heroImg {
+    height:500px; 
+    background-repeat:no-repeat;
+    background-position:center center;
+}
