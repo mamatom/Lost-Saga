@@ -4,7 +4,7 @@ var heroesJson = $.getJSON("./json/heroes.json", function (heroes_json) {
     //console.log(heroes_json);
     heroesJson = heroes_json;
     $.holdReady(false);
-    
+
 
 });
 
@@ -20,10 +20,10 @@ $(document).ready(
             lastResultsId.push(hero.id);
         })
         $("#resultsContainer").hide();
-    
-      selectHero(heroesJson.heroId1,true);  
-    }  
-    );
+
+        selectHero(heroesJson.heroId1, true);
+    }
+);
 
 
 
@@ -107,10 +107,10 @@ function newJson() {
 
 }
 
-function selectHero(heroId,pageLoad = false) {
+function selectHero(heroId, pageLoad = false) {
     //console.log(heroId.id);
     var timer = 1000;
-    if(pageLoad){
+    if (pageLoad) {
         timer = 0;
     }
     $('#resultsContainer').hide();
@@ -135,12 +135,15 @@ function selectHero(heroId,pageLoad = false) {
         infoSlot = infoSlot.getElementsByClassName('info')[0];
         infoSlot = infoSlot.getElementsByTagName('p')[0];
         infoSlot.innerHTML = hero[slot[i]];
-        if (hero[slot[i]].length == 0) {
+        if (hero[slot[i]].length == 0 && i == 2) {
+            infoSlot.innerHTML = 'ไม่มีข้อมูล'
+        }
+        if (hero[slot[i]].length == 0 && i == slot.length-1) {
             infoSlot.innerHTML = 'ไม่มีหมายเหตุ'
         }
     }
 
-     slot = [
+    slot = [
         "d",
         "hold_d",
         "half_d",
@@ -175,7 +178,22 @@ function selectHero(heroId,pageLoad = false) {
 }
 
 
-//function genderSwitch(gender)
+function switchGender(gender) {
+    var genderHeroId = $('.infoContainer.id .info p')[0].innerHTML;
+    genderHeroId = ('00' + (genderHeroId)).slice(-3);
+    if (gender == 'm') {
+        console.log('men')
+        $('.men ')[0].className = 'men active';
+        $('.women')[0].className = 'women';
+        $('#heroImg').attr('style', 'background-image: url("img/heroes sprite/' + genderHeroId + '_M.png");')
+    }
+    if (gender == 'w') {
+        $('#heroImg').attr('style', 'background-image: url("img/heroes sprite/' + genderHeroId + '_W.png");')
+        $('.women')[0].className = 'women active';
+        $('.men')[0].className = 'men';
+        console.log('women')
+    }
+}
 
 
 
@@ -260,6 +278,3 @@ $(document).mouseup(function (e) {
         container.hide('linear');
     }
 });
-
-
-

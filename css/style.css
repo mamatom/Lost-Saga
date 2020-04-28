@@ -12,6 +12,7 @@ body {
     background-color: #091724;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -27,8 +28,23 @@ main {
     background-color: var(--bg-pimary);
     z-index: 1;
 }
+#logoContainer{
+    display: inline;
+    position: relative;
+    
+    
+}
+#logoContainer img{
+    height: 3.5rem;
+    margin-top: 2px;
+
+}
+
 
 .heroInput {
+    position: relative;
+    display: inline;
+    top:-1.25rem;
     margin-top: 0.6rem;
     font-family: 'Mitr';
     font-size: 22px;
@@ -42,6 +58,8 @@ main {
     z-index: 600;
     width: 20rem;
     height: 30rem;
+    top: -1rem;
+    left: 8.5rem;
     background-color: #070c11;
     
     overflow-y: scroll;
@@ -108,7 +126,7 @@ main {
     margin-top:-20px;
     height:600px; 
     background-repeat:no-repeat;
-    background-position:center center;
+    background-position:60% center;
     position: relative;
 }
 
@@ -283,22 +301,28 @@ main {
     transform: unset;
 }
 
+
+
 #genderContainer{
     position: absolute;
-    top: 50px;
-    right: 40px;
+    right:80px;
+    top:40px;
+    margin-bottom: 10px;
 }
 
+
 .gender a{
-    width: 100px;
+    width: 80px;
     height: 30px;
-    padding-top:4px;
+    padding:auto;
+
     padding-left:10px;
     display:inline-block;
     text-align: center;
     margin-left: -5px;;
     background:white;
     color:var(--bg-pimary);
+    font-size: 16;
     font-weight: bold;
 }
 

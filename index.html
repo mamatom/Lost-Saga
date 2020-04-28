@@ -15,7 +15,10 @@
 <html>
 <body>
     <nav class="navbar">
-        <div style="margin-left:8rem; height: 3rem;">
+        <div style="margin-left:1rem; height: 3rem;">
+            <div id="logoContainer">
+                <img src="img/logo.png">
+            </div>
             <input class="heroInput" type="text" autocomplete="off" name="heroName" id="heroName" placeholder="Enter Hero Name..." onkeyup="filterHeroes(this)" >
             <div id="resultsContainer">
 
@@ -40,10 +43,11 @@
             </div>
             <div id="genderContainer">
                 <div class="gender">
-                    <a class="men active">ชาย</a>
-                    <a class="women">หญิง</a>
+                    <a class="men active" onclick="switchGender('m')">ชาย</a>
+                    <a class="women" onclick="switchGender('w')">หญิง</a>
                 </div>
-            </div>
+            </div>          
+
             <div id="movesContainer">
                 <div class="damageContainer d">
                     <a><p>Normal Attack (D)</p></a>
@@ -116,6 +120,8 @@
     
             </div>
             <div id="infoContainer">
+
+                
                 <div class="infoContainer id">
                     <a><p>Hero ID</p></a>
                     <a class="info"><p>1</p></a>
