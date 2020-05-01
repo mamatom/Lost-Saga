@@ -26,108 +26,38 @@ $(document).ready(
 );
 
 
-
-
-function newJson() {
-    $.each(heroesJson, function (_, hero) {
-        var id = hero.id;
-        if (!dataJson['heroId' + id]) {
-            dataJson['heroId' + id] = {};
-        }
-        var data = dataJson['heroId' + id];
-
-
-        if (!data.rarity)
-            data.rarity = "";
-        if (!data.evo)
-            data.evo = "";
-        if (!data.d)
-            data.d = [];
-        if (!data.hold_d)
-            data.hold_d = [];
-        if (!data.half_d)
-            data.half_d = [];
-        if (!data.dash)
-            data.dash = [];
-        if (!data.dash_half_d)
-            data.dash_half_d = [];
-        if (!data.dash_hold_d)
-            data.dash_hold_d = [];
-        if (!data.air_d)
-            data.air_d = [];
-        if (!data.air_half_d)
-            data.air_half_d = [];
-        if (!data.air_hold_d)
-            data.air_hold_d = [];
-        if (!data.air_dash)
-            data.air_dash = [];
-        if (!data.special)
-            data.special = [];
-        if (!data.counter)
-            data.counter = [];
-        if (!data.sd)
-            data.sd = [];
-        if (!data.tester)
-            data.tester = "";
-        if (!data.note)
-            data.note = "";
-
-
-
-
-        newhero = {
-            "name": hero.name,
-            "id": hero.id,
-            "type": hero.type,
-            "rarity": data.rarity,
-            "evo": data.evo,
-            "d": data.d,
-            "hold_d": data.hold_d,
-            "half_d": data.half_d,
-            "dash": data.dash,
-            "dash_half_d": data.dash_half_d,
-            "dash_hold_d": data.dash_hold_d,
-            "air_d": data.air_d,
-            "air_half_d": data.air_half_d,
-            "air_hold_d": data.air_hold_d,
-            "air_dash": data.air_dash,
-            "special": data.special,
-            "counter": data.counter,
-            "sd": data.sd,
-            "tester": data.tester,
-            "note": data.note
-
-        }
-
-        allData['heroId' + id] = newhero;
-
-    });
-    //console.log(allData);
-    console.log(JSON.stringify(allData));
-
-}
-
 function selectHero(heroId, pageLoad = false) {
     //console.log(heroId.id);
     var timer = 1000;
     if (pageLoad) {
         timer = 0;
     }
+    
     $('#resultsContainer').hide();
     var id = ('00' + (heroId.id)).slice(-3);
-    $('#heroImg').attr('style', 'background-image: url("img/heroes sprite/' + id + '_M.png");');
+    console.log();
+    if($('.men.active').length == 1){
+        $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_M.png");');
+    }else{
+        $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_W.png");');
+    }
+
     console.log(id);
-    //$('.damageContainer').hide(1000);
+    
 
     let hero = heroesJson['heroId' + heroId.id];
     $('.heroNameContainer')[0].innerHTML = hero.name;
     $('.heroType')[0].innerHTML = hero.type;
     $('.heroRarit')[0].innerHTML = hero.rarity;
+    let imgPos = -1 * ((hero.id - 1) * 75);
+    $('#heroFace').attr('style','background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px; background-size: cover')
+    
 
     var slot = [
         "id",
         "type",
         "rarity",
+        "tester",
         "note"
     ]
     for (i = 0; i < slot.length; i++) {
@@ -135,10 +65,10 @@ function selectHero(heroId, pageLoad = false) {
         infoSlot = infoSlot.getElementsByClassName('info')[0];
         infoSlot = infoSlot.getElementsByTagName('p')[0];
         infoSlot.innerHTML = hero[slot[i]];
-        if (hero[slot[i]].length == 0 && i == 2) {
+        if (hero[slot[i]].length == 0) {
             infoSlot.innerHTML = 'ไม่มีข้อมูล'
         }
-        if (hero[slot[i]].length == 0 && i == slot.length-1) {
+        if (hero[slot[i]].length == 0 && i == slot.length - 1) {
             infoSlot.innerHTML = 'ไม่มีหมายเหตุ'
         }
     }
@@ -158,22 +88,23 @@ function selectHero(heroId, pageLoad = false) {
         "counter",
         "sd"
     ]
+
     for (i = 0; i < slot.length; i++) {
         var damageSlot = document.getElementsByClassName(slot[i])[0];
         damageSlot = damageSlot.getElementsByClassName('damage')[0];
         damageSlot = damageSlot.getElementsByTagName('p')[0];
         damageSlot.innerHTML = hero[slot[i]];
-        if (i != 12) {
+        
             if (hero[slot[i]].length == 0) {
                 $('.' + slot[i]).hide(timer);
             } else {
                 $('.' + slot[i]).show(timer);
             }
-        } else {
+        
             if (hero[slot[i]].length == 0) {
                 damageSlot.innerHTML = 'ไม่มีข้อมูล'
             }
-        }
+        
     }
 }
 
@@ -182,7 +113,7 @@ function switchGender(gender) {
     var genderHeroId = $('.infoContainer.id .info p')[0].innerHTML;
     genderHeroId = ('00' + (genderHeroId)).slice(-3);
     if (gender == 'm') {
-        console.log('men')
+        console.log('men');
         $('.men ')[0].className = 'men active';
         $('.women')[0].className = 'women';
         $('#heroImg').attr('style', 'background-image: url("img/heroes sprite/' + genderHeroId + '_M.png");')
@@ -191,7 +122,7 @@ function switchGender(gender) {
         $('#heroImg').attr('style', 'background-image: url("img/heroes sprite/' + genderHeroId + '_W.png");')
         $('.women')[0].className = 'women active';
         $('.men')[0].className = 'men';
-        console.log('women')
+        console.log('women');
     }
 }
 
