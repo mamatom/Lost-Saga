@@ -1,33 +1,61 @@
 <!DOCTYPE html>
+
 <head>
     <title>Lost Saga Heroes Info</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr&display=swap">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/heroes.js"></script>
     <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-    
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W6TLBV8');
+    </script>
+    <!-- End Google Tag Manager -->
 
 
 </head>
 
 
 <html>
+
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6TLBV8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <nav class="navbar">
         <div style="margin-left:1rem; height: 3rem;">
             <div id="logoContainer">
                 <img src="img/logo.png">
             </div>
-            <input class="heroInput" type="text" autocomplete="off" name="heroName" id="heroName" placeholder="Enter Hero Name..." onkeyup="filterHeroes(this)" >
+            <input class="heroInput" type="text" autocomplete="off" name="heroName" id="heroName"
+                placeholder="Enter Hero Name..." onkeyup="filterHeroes(this)">
             <div id="resultsContainer">
 
             </div>
         </div>
-        
-        <script>$("#resultsContainer").hide();</script>
+
+        <script>
+            $("#resultsContainer").hide();
+        </script>
     </nav>
-    
+
     <main>
         <div id="heroImg" style="background-image: url('img/heroes sprite/001_M.png');">
             <div id="nameContainer">
@@ -38,126 +66,198 @@
                     <a class="heroNameContainer">ironKnight</a>
 
                 </div>
-                    
-               
+
+
             </div>
             <div id="genderContainer">
                 <div class="gender">
                     <a class="men active" onclick="switchGender('m')">ชาย</a>
                     <a class="women" onclick="switchGender('w')">หญิง</a>
                 </div>
-            </div>          
+            </div>
 
             <div id="movesContainer">
                 <div class="damageContainer d">
-                    <a><p>Normal Attack (D)</p></a>
-                    <a class="damage d"><p>1</p></a>
+                    <a>
+                        <p>Normal Attack (D)</p>
+                    </a>
+                    <a class="damage d">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer hold_d">
-                    <a><p>Hold D</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Hold D</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer half_d">
-                    <a><p>Half D</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Half D</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer dash">
-                    <a><p>Dash</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Dash</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer dash_half_d">
-                    <a><p>Dash Half D</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Dash Half D</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer dash_hold_d">
-                    <a><p>Dash Hold D</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Dash Hold D</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
-                
+
                 <div class="damageContainer air_d">
-                    <a><p>Jump D</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Jump D</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer air_half_d">
-                    <a><p>Jump Half D</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Jump Half D</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer air_hold_d">
-                    <a><p>Jump Hold D</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Jump Hold D</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer air_dash">
-                    <a><p>Jump Dash</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Jump Dash</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer special">
-                    <a><p>Special</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Special</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer counter">
-                    <a><p>Counter</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Counter</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="damageContainer sd">
-                    <a><p>Weapon Skill</p></a>
-                    <a class="damage"><p>1</p></a>
+                    <a>
+                        <p>Weapon Skill</p>
+                    </a>
+                    <a class="damage">
+                        <p>1</p>
+                    </a>
                 </div>
 
 
-    
-    
-    
+
+
+
             </div>
             <div id="infoContainer">
 
-                
+
                 <div class="infoContainer id">
-                    <a><p>Hero ID</p></a>
-                    <a class="info"><p>1</p></a>
+                    <a>
+                        <p>Hero ID</p>
+                    </a>
+                    <a class="info">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="infoContainer type">
-                    <a><p>ประเภท</p></a>
-                    <a class="info"><p>1</p></a>
+                    <a>
+                        <p>ประเภท</p>
+                    </a>
+                    <a class="info">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="infoContainer rarity">
-                    <a><p>ความแรร์</p></a>
-                    <a class="info"><p>1</p></a>
+                    <a>
+                        <p>ความแรร์</p>
+                    </a>
+                    <a class="info">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="infoContainer tester">
-                    <a><p>ผู้เทส</p></a>
-                    <a class="info"><p>1</p></a>
+                    <a>
+                        <p>ผู้เทส</p>
+                    </a>
+                    <a class="info">
+                        <p>1</p>
+                    </a>
                 </div>
 
                 <div class="infoContainer note">
-                    <a><p>หมายเหตุ</p></a>
-                    <a class="info"><p>1</p></a>
+                    <a>
+                        <p>หมายเหตุ</p>
+                    </a>
+                    <a class="info">
+                        <p>1</p>
+                    </a>
                 </div>
             </div>
-        
-        
-        
+
+
+
         </div>
 
         <div style="text-align: center; margin-top: 3rem; font-size: 0.8rem; color:white;">
             <a>Made by: Kettenkrat and Prayut from </a>
             <a href="https://www.facebook.com/LostSagaUpateKorea">Lost Saga Update Korea</a>
         </div>
-        
-        
+
+
 
 
 </body>
