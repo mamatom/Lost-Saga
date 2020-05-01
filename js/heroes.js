@@ -32,27 +32,38 @@ function selectHero(heroId, pageLoad = false) {
     if (pageLoad) {
         timer = 0;
     }
-    
     $('#resultsContainer').hide();
+
+    var hero = heroesJson['heroId' + heroId.id];
+
+    if (!pageLoad) {
+        //<!-- Global site tag (gtag.js) - Google Analytics -->
+        gtag('event', 'Selecting Hero', {
+            'event_category': 'Hero Details',
+            'event_label': hero.name,
+            'value': 'Selecting Hero From Browse'
+        });
+    }
+
+
+    //Select gender
     var id = ('00' + (heroId.id)).slice(-3);
-    console.log();
-    if($('.men.active').length == 1){
+    if ($('.men.active').length == 1) {
         $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_M.png");');
-    }else{
+    } else {
         $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_W.png");');
     }
 
-    console.log(id);
-    
-
-    let hero = heroesJson['heroId' + heroId.id];
+    //console.log(id);
     $('.heroNameContainer')[0].innerHTML = hero.name;
     $('.heroType')[0].innerHTML = hero.type;
     $('.heroRarit')[0].innerHTML = hero.rarity;
     let imgPos = -1 * ((hero.id - 1) * 75);
-    $('#heroFace').attr('style','background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px; background-size: cover')
+    $('#heroFace').attr('style', 'background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px; background-size: cover')
+
     
 
+    //Hero's Details
     var slot = [
         "id",
         "type",
@@ -73,6 +84,7 @@ function selectHero(heroId, pageLoad = false) {
         }
     }
 
+    //Hero's Moves
     slot = [
         "d",
         "hold_d",
@@ -88,23 +100,22 @@ function selectHero(heroId, pageLoad = false) {
         "counter",
         "sd"
     ]
-
     for (i = 0; i < slot.length; i++) {
         var damageSlot = document.getElementsByClassName(slot[i])[0];
         damageSlot = damageSlot.getElementsByClassName('damage')[0];
         damageSlot = damageSlot.getElementsByTagName('p')[0];
         damageSlot.innerHTML = hero[slot[i]];
-        
-            if (hero[slot[i]].length == 0) {
-                $('.' + slot[i]).hide(timer);
-            } else {
-                $('.' + slot[i]).show(timer);
-            }
-        
-            if (hero[slot[i]].length == 0) {
-                damageSlot.innerHTML = 'ไม่มีข้อมูล'
-            }
-        
+
+        if (hero[slot[i]].length == 0) {
+            $('.' + slot[i]).hide(timer);
+        } else {
+            $('.' + slot[i]).show(timer);
+        }
+
+        if (hero[slot[i]].length == 0) {
+            damageSlot.innerHTML = 'ไม่มีข้อมูล'
+        }
+
     }
 }
 
