@@ -59,7 +59,7 @@ function selectHero(heroId, pageLoad = false) {
     $('.heroType')[0].innerHTML = hero.type;
     $('.heroRarit')[0].innerHTML = hero.rarity;
     let imgPos = -1 * ((hero.id - 1) * 75);
-    $('#heroFace').attr('style', 'background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px; background-size: cover')
+    $('#heroFace').attr('style', 'background: url(./img/heroFace.jpg) ' + imgPos + 'px 0px; background-size: cover;');
 
     
 

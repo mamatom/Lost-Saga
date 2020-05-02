@@ -21,7 +21,7 @@ main {
 }
 
 :link{
-    color: darkorange;
+    color: var(--text-secondary);
     text-decoration: unset;
 }
 :link:hover {
@@ -188,16 +188,14 @@ main {
     top:-20px;
 }
 
-
-
  #heroFace{
 
-        height: 75px;
-        width: 75px;
-        margin-left: 5px;
-        display: inline-block;
-        vertical-align: -18px;
-        position: relative;
+    height: 75px;
+    width: 75px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: -18px;
+    
         
     
 }
