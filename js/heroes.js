@@ -35,9 +35,10 @@ function selectHero(heroId, pageLoad = false) {
     $('#resultsContainer').hide();
 
     var hero = heroesJson['heroId' + heroId.id];
-
+    
+    //<!-- Global site tag (gtag.js) - Google Analytics --> 
     if (!pageLoad) {
-        //<!-- Global site tag (gtag.js) - Google Analytics -->
+        
         gtag('event', 'Selecting Hero', {
             'event_category': 'Hero Details',
             'event_label': hero.name,
@@ -49,9 +50,9 @@ function selectHero(heroId, pageLoad = false) {
     //Select gender
     var id = ('00' + (heroId.id)).slice(-3);
     if ($('.men.active').length == 1) {
-        $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_M.png");');
+        $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_M.png"); background-size: contain;');
     } else {
-        $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_W.png");');
+        $('#heroImg').attr('style', 'background-image: url("./img/heroes sprite/' + id + '_W.png"); background-size: contain;');
     }
 
     //console.log(id);
